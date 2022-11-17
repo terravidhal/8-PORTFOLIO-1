@@ -2,22 +2,22 @@
 
 .background-image-divider{
   /*  background-image: url("/assets/images/home/home2.jpg");*/
-    background-size: cover;
-    background-repeat: no-repeat;
+  /*  background-size: cover;
+    background-repeat: no-repeat; */
     left: 0;
     top: 0;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     z-index: 5;
  }
 .background-image-divider img{
     background-size: cover;
     background-repeat: no-repeat;
-    left: 0;
-    top: 0;
+  /*  left: 0;
+    top: 0; */
     width: 100%;
     height: 100vh;
-    z-index: 5;
+  /* z-index: 5;*/
  }
  
  section#home{
