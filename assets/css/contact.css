@@ -1,0 +1,184 @@
+/*************** CONTACT **********************/
+#contact{
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+    background-color: white;
+    overflow-y: auto;
+}
+/*** CONTACT-CONTENT ***/
+/* GET-IN-TOUCH */
+.contact-content{
+    margin: 0 75px;
+}
+.contact-content h3{
+    border-bottom: 1px solid var(--main-color-theme);
+}
+.get-in-Touch{
+  width: 450px;
+}
+.get-in-Touch h3{
+  width: 83px;
+}
+.get-in-Touch p{
+  line-height: 1.8;
+  width: 300px;
+  font-size: 0.9rem;
+}
+.contact-icon-item{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin: 10px 0;
+}
+.contact-icon{
+    font-size: 1.5rem;
+    color: var(--main-color-gray);
+}
+.contact-icon-infos{
+    font-weight: bold;
+    font-size: 0.9rem;
+    border-bottom: 1px solid transparent;
+    cursor: pointer;
+}
+.contact-icon-infos:hover{
+    border-bottom: 1px solid var(--main-color-theme);
+}
+.contact-icon-item:hover  .contact-icon i{
+    color: var(--main-color-theme);
+}
+.contact-form{
+  width: 450px;
+}
+.contact-form h3{
+  width: 91px;
+}
+
+/* CONTACT-FORM */
+.form-name{
+    margin: 28px 0 23px 0;
+}
+.form-name input, .form-email input{
+    width: 85%;
+    height: 35px;
+    border: 1px solid var(--main-color-pinchard);
+    color: var(--main-color-gray);
+    padding-left: 10px;
+    font-size: 0.9rem;
+    outline: none;
+}
+.form-name i, .form-email i{
+    position: relative;
+    right: 28px;
+    font-size: 1.1rem;
+    color: var(--main-color-pinchard);
+}
+.form-email{
+    margin: 23px 0;
+}
+.form-message{
+    margin-bottom: 23px;
+}
+.form-message textarea{
+    width: 78.9%;
+    height: 114px;
+    border: 1px solid var(--main-color-pinchard);
+    color: var(--main-color-gray);
+    padding: 13px 25px 13px 10px;
+    font-size: 1rem;
+    resize: none;
+    outline: none;
+}
+.form-message i{
+    position: relative;
+    bottom: 105px;
+    right: 28px;
+    font-size: 1.1rem;
+    color: var(--main-color-pinchard);
+}
+.recaptcha{
+    width: 85.5%;
+    margin-bottom: 23px;
+    border: 1px solid var(--main-color-pinchard);
+    background-color: var(--main-color-light-gray);
+    padding: 5px;
+}
+.checkbox input{
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+.recaptcha-message{
+  font-size: 0.8rem;
+}
+.recaptcha-picture{
+    padding-left: 20px;
+}
+.recaptcha-picture img{
+    width: 50px;
+}
+.recaptcha-description{
+  font-size: 0.5rem;
+  color: var(--main-color-gray);
+  padding-right: 10px;
+}
+form button{
+    border: 1px solid var(--main-color-theme);
+    padding: 10px 15px;
+    font-size: 0.8rem;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+
+/********* VUE TABLETTE & MOBILE ***************/
+
+@media screen and (max-width: 1220px) {
+    .contact-content {
+        margin: 0 30px;
+      }
+}
+@media screen and (max-width: 900px) {
+    /************** SECTIONS  ****************/
+    #contact{
+        height: 111vh;
+    }
+}
+@media screen and (max-width: 684px) {
+    .contact-content{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .get-in-Touch {
+        width: auto;
+    }
+    .contact-form {
+        width: auto;
+      } 
+    .get-in-Touch p{
+        width: auto;
+    } 
+    .form-name input, .form-email input {
+        width: 90%;
+    }
+    .form-message textarea {
+        width: 88.5%; /*86.2%*/
+        padding: 13px 10px 13px 10px;
+    }
+    .recaptcha {
+        width: 90.2%;
+    }
+}
+@media screen and (max-width: 484px) {
+    
+    .form-name input, .form-email input {
+        width: 86%;
+    }
+    .form-message textarea {
+        width: 83.5%;
+    }
+    .recaptcha {
+        width: 87%;
+    }
+}
