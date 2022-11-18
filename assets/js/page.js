@@ -1,7 +1,8 @@
 /********** GESTION AFFICHAGE/MASQUAGE DES PAGES **************/
 
 /******** DECLARATION DES VARIABLES ************/
-var backgroundImage = document.getElementById("background");
+/*var backgroundImage = document.getElementById("background");*/
+var backgroundImage = document.querySelector(".background");
 var Menulists = document.querySelectorAll("ul.menu-lists li");
 var pages = document.querySelectorAll(".page");
 var asideLeft = document.getElementById("aside-left");

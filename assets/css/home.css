@@ -1,24 +1,24 @@
 /*************** HOME **********************/
 
-.background-image-divider{
+.background{
   /*  background-image: url("/assets/images/home/home2.jpg");*/
   /*  background-size: cover;
     background-repeat: no-repeat; */
     left: 0;
     top: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     z-index: 5;
  }
-.background-image-divider img{
+/* .background-image-divider img{
     background-size: cover;
-    background-repeat: no-repeat;
-  /*  left: 0;
-    top: 0; */
+    background-repeat: no-repeat; 
+    left: 0;
+    top: 0; 
     width: 100%;
-    height: 100vh;
-  /* z-index: 5;*/
- }
+    height: 100%; 
+   z-index: 5;
+ } */
  
  section#home{
     color: white; 
@@ -79,7 +79,7 @@ span.title{
 
 @media screen and (max-width: 900px){
 
-   .background-image-divider{
+   .background{
       height: 111vh;
    }
    section#home{
